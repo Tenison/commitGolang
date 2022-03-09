@@ -20,6 +20,6 @@ func main() {
 	fmt.Print("Please enter number of ticket : ")
 	fmt.Scan(&userTickets)
 
-	fmt.Printf("%v %v, you purhased %d tickets, confirmation will be sent to your email at %s", firstName, lastName,  userTickets, email)
+	fmt.Printf("Thankyou %v %v, you purhased %d tickets, confirmation will be sent to your email at %s", firstName, lastName,  userTickets, email)
 
 }
