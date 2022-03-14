@@ -52,4 +52,5 @@ func main() {
 	myslice2 = append(myslice2, "last")
 	fmt.Printf("Slice capacity after adding new data: %v\n", cap(myslice2))
 	fmt.Printf("list slice : %v\n", myslice2)
+
 }

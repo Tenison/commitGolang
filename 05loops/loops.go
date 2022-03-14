@@ -9,4 +9,11 @@ func main() {
 	for i := 0; i < max; i++ {
 		fmt.Println("Hello", i)
 	}
+
+	for {
+		max++
+		if max == 10 {
+			break
+		}
+	}
 }
