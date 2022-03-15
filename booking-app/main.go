@@ -6,11 +6,14 @@ import (
 )
 
 func main() {
+	maxTickets := 50
 	var firstName string
 	var lastName string
 	var email string
 	var userTickets int8
 	userFullname := []string{}
+	var emails []string
+	ticketPerUser := []int8{}
 
 	for {
 		fmt.Print("Please enter your first name : ")
@@ -25,16 +28,20 @@ func main() {
 		fmt.Print("Please enter number of ticket : ")
 		fmt.Scan(&userTickets)
 
-		userFullname = append(userFullname, firstName+" "+lastName)
+		maxTickets -= int(userTickets)
 
-		if userTickets > 5 {
+		userFullname = append(userFullname, firstName+" "+lastName)
+		emails = append(emails, email)
+		ticketPerUser = append(ticketPerUser, userTickets)
+
+		if maxTickets <= 0 {
 			break
 		}
 	}
 
-	for i := 0; i < len(userFullname); i++ {
-		fristnameOnly := strings.Fields(userFullname[i]) // divide sting in array
-		fmt.Printf("Thankyou %s, you purhased %d tickets, confirmation will be sent to your email at %s\n", fristnameOnly[0], userTickets, email)
+	for index, userName := range userFullname {
+		fristnameOnly := strings.Fields(userName) // divide sting in array
+		fmt.Printf("Thankyou %s, you purhased %d tickets, confirmation will be sent to your email at %s\n", fristnameOnly[0], ticketPerUser[index], emails[index])
 	}
 
 }
