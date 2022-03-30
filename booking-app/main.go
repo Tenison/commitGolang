@@ -15,6 +15,8 @@ func main() {
 	var emails []string
 	ticketPerUser := []int8{}
 
+	greetUser("Go User")
+
 	for {
 		fmt.Print("Please enter your first name : ")
 		fmt.Scan(&firstName)
@@ -44,4 +46,9 @@ func main() {
 		fmt.Printf("Thankyou %s, you purhased %d tickets, confirmation will be sent to your email at %s\n", fristnameOnly[0], ticketPerUser[index], emails[index])
 	}
 
+}
+
+func greetUser(confName string) {
+	fmt.Println("Welcome to the " + confName + " conference")
+	fmt.Println("We would like to take some few information from you, thanks for your patience!!!")
 }
