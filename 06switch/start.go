@@ -26,6 +26,17 @@ func main() {
 		fmt.Println("It's a weekday")
 	}
 
+	//Even and Odd switch
+	// change number to anything you want
+	number := 2
+	switch {
+	case number%2 == 0:
+		println("Even number : ", number)
+	default:
+		println("Odd number : ", number)
+
+	}
+
 	//Cases with conditions
 	t := time.Now()
 	switch {
