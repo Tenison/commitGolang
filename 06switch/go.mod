@@ -1,3 +1,3 @@
-module start.go
+module start
 
 go 1.17

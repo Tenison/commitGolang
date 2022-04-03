@@ -1,3 +1,3 @@
-module types.go
+module types
 
 go 1.17
