@@ -22,6 +22,8 @@ func main() {
 	//constant
 	const ad = "hold this value forever"
 
+	fmt.Printf("Output %v, %v, %v \n", number, sentence, ad)
+
 	fmt.Printf("type: %T \n", boolean)
 
 	fmt.Println("My is ", myname)
@@ -34,3 +36,5 @@ func main() {
 	fmt.Printf("the variable contains : %d", holdValue)
 
 }
+
+//Sprintf
