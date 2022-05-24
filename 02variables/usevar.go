@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "usevar/varExp"
 
 //Variables in go
 //string
@@ -11,30 +11,8 @@ import "fmt"
 //map
 
 func main() {
-	//variable assignment
-	var myname = "osei owusu"
-	var boolean = true
-
-	//More Options
-	var number int = 5 //declared but not used!!!
-	sentence := "hii"
-
-	//constant
-	const ad = "hold this value forever"
-
-	fmt.Printf("Output %v, %v, %v \n", number, sentence, ad)
-
-	fmt.Printf("type: %T \n", boolean)
-
-	fmt.Println("My is ", myname)
-
-	//define a varible.
-	var holdValue int8
-
-	//assigning the variable
-	holdValue = 4
-	fmt.Printf("the variable contains : %d", holdValue)
-
+	//Please refer to varExp package exported functions used here
+	varExp.DeclareFunc()
 }
 
 //Sprintf
