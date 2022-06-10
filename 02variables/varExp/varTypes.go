@@ -52,7 +52,7 @@ func DeclareComplex() {
 	fmt.Println(c)
 }
 
-func typeCasting() {
+func TypeCasting() {
 	a := 4
 	var b int8 = 7
 
@@ -61,4 +61,6 @@ func typeCasting() {
 
 	//d := a + b //won't work because a is INT and b is INT8
 	d := a + c
+
+	fmt.Println(d)
 }

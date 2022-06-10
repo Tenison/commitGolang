@@ -1,6 +1,8 @@
 package varExp
 
-func simpleOperations() {
+import "fmt"
+
+func SimpleOperations() {
 	a, b := 10, 3
 
 	c := a + b
@@ -9,8 +11,14 @@ func simpleOperations() {
 	f := a * b
 	g := a % b
 
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)
+	fmt.Println(f)
+	fmt.Println(g)
+
 }
 
-func shiftOperations() {
+func ShiftOperations() {
 
 }
