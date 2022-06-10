@@ -41,3 +41,24 @@ func DeclareFloat() {
 	fmt.Println(b)
 
 }
+
+func DeclareComplex() {
+	var a complex64 = 1 + 3i
+	var b complex128
+	c := complex(2, 3)
+
+	fmt.Printf("%v %v %T", real(a), imag(a), a)
+	fmt.Println(b)
+	fmt.Println(c)
+}
+
+func typeCasting() {
+	a := 4
+	var b int8 = 7
+
+	///type converting 'b'
+	c := int(b)
+
+	//d := a + b //won't work because a is INT and b is INT8
+	d := a + c
+}
