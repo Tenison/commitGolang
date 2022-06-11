@@ -57,14 +57,31 @@ func DeclareComplex() {
 }
 
 func DeclareString() {
+	//Types of string declaration
+	var a string = "Hello"
+
+	b := "Hii"
+
+	var c string
+	c = "$#"
+
 	//String is a series of charaters
 	//Each charater is represented with a byte or sometimes bytes depending on the charater.
-	//Ecah byte or bytes has a numerical value(Integer Number) or code point value.
+	//Each byte or bytes has a numerical value(s)(Integer Number(s)) or code point value.
 	//code point value  -> numerical representation of a charater in a string Eg:  d => 100
 	//GO uses UTF8 encoding to transform/encode these charaters into binary or sequence of binary with is then stored in memory
 	//Because Computers understand data in o's and 1's.
-	//A UFT8 charater charater range between 1 and 4 bytes. This is because there are a lot of charaters and symbols for different languages.
+	//A UFT8 charaters' code point value can range between 1 and 4 bytes. This is because there are a lot of charaters and symbols for different languages.
 
+	//accessing a string index or charater gives the numerical value of the charater
+	fmt.Printf("%v \n", a[0])
+	fmt.Printf("%v \n", c[0])
+
+	//Access Charater in a string
+	fmt.Printf("%v \n", string(b[0]))
+
+	//len() fucntion gives the number of bytes(1 to 4 [UTF8]) that make up the code point value for a charater
+	fmt.Printf("%v \n", len(string(c[1])))
 }
 
 func TypeCasting() {

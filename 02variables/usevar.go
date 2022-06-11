@@ -12,7 +12,7 @@ import "usevar/varExp"
 
 func main() {
 	//Please refer to varExp package exported functions used here
-	varExp.DeclareFunc()
+	varExp.DeclareString()
 }
 
 //Sprintf
