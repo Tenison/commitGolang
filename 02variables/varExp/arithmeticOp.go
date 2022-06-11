@@ -45,3 +45,14 @@ func BitOperations() {
 	fmt.Println(e)
 
 }
+
+func StringConcat() {
+	a := "hello there"
+	b := "Osei"
+
+	fmt.Printf("%s", a+b) //"hello thereOsei"
+
+	c := a + " " + b
+
+	fmt.Printf("%s", c) //"hello there Osei""
+}

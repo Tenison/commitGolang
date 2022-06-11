@@ -63,7 +63,7 @@ func DeclareString() {
 	b := "Hii"
 
 	var c string
-	c = "$#"
+	c = "$#😀~"
 
 	//String is a series of charaters
 	//Each charater is represented with a byte or sometimes bytes depending on the charater.
@@ -73,15 +73,32 @@ func DeclareString() {
 	//Because Computers understand data in o's and 1's.
 	//A UFT8 charaters' code point value can range between 1 and 4 bytes. This is because there are a lot of charaters and symbols for different languages.
 
-	//accessing a string index or charater gives the numerical value of the charater
-	fmt.Printf("%v \n", a[0])
-	fmt.Printf("%v \n", c[0])
+	//accessing a string index of a charater gives the numerical value representation of the charater
+	fmt.Printf("%v \n", a[0]) //Only first 127 charaters can be converted to int or binary directly!!!
+	fmt.Printf("%v \n", c[2])
 
 	//Access Charater in a string
 	fmt.Printf("%v \n", string(b[0]))
 
 	//len() fucntion gives the number of bytes(1 to 4 [UTF8]) that make up the code point value for a charater
-	fmt.Printf("%v \n", len(string(c[1])))
+	fmt.Printf("%v \n", len(string(b[1]))) //i in Hii has one(1) byte
+	fmt.Printf("%v \n", len(string(c[2]))) //😀 has two(2) bytes
+
+	//binary representation of charaters
+	fmt.Println("------------------------------")
+	fmt.Println("😀")
+	fmt.Printf("%d == ", c[2])        // This is  WRONG because of the number of  bytes that make up the charater.
+	fmt.Printf("%b || WRONG\n", c[2]) // Each byte in the code point value needs to be respresented individual
+	fmt.Printf("%v || Check shows it is a WRONG conversion\n", string(c[2]))
+
+	fmt.Println("------------------------------")
+	fmt.Println("😀")
+	for i := 0; i < len(string(c[2])); i++ {
+		fmt.Printf("%d == ", string(c[2])[i]) // this UTF8 encoding is correct because each byte is converted separately
+		fmt.Printf("%b \n", string(c[2])[i])
+	}
+	fmt.Println("------------------------------")
+
 }
 
 func TypeCasting() {
