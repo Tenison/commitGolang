@@ -99,6 +99,7 @@ func DeclareString() {
 	}
 	fmt.Println("------------------------------")
 
+	//[]byte -- learn
 }
 
 func TypeCasting() {
