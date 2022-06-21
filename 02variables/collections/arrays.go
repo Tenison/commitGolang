@@ -19,3 +19,11 @@ func DeclareArray (){
 	fmt.Printf("%v", newArray1)
 	fmt.Printf("%v", newArray2)
 }
+
+func ArrayLen(){
+	newArray2 := [...]string{"Osei", "Yaw", "Michael", "Frank"} ///Initize array to whatever value size that is passed in
+
+	lenght := len(newArray2)
+
+	fmt.Println("Array lenght is ", lenght)
+}
