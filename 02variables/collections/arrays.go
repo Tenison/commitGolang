@@ -43,3 +43,5 @@ func MultiDimensional(){
 	fmt.Println("Array lenght is ", multiDimensionalArray)
 }
 
+
+

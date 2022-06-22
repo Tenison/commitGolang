@@ -1,0 +1,6 @@
+GO built in functions
+
+len()
+cap()
+make()
+append()
