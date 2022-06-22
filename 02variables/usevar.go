@@ -1,6 +1,8 @@
 package main
 
-import "usevar/varExp"
+import (
+	"02variables/collections"
+)
 
 //Variables in go
 //string
@@ -8,11 +10,14 @@ import "usevar/varExp"
 //float [float32, float64, AND complex64, complex128]
 //bool
 //arrays
+//slices
 //map
 
 func main() {
 	//Please refer to varExp package exported functions used here
-	varExp.DeclareString()
+	//varExp.DeclareString()
+	collections.DeclareSliceAndAppend()
+	
 }
 
 //Sprintf
