@@ -18,6 +18,7 @@ func main() {
 		fmt.Println("three")
 	}
 
+	//just added a new comment!!!
 	//Simple Switch
 	//STAGE 2
 	gg := 2
